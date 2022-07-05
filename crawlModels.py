@@ -6,7 +6,7 @@ from selenium.webdriver.common.by import By
 import time
 
 def writeTofile(a):
-    f = open("/Users/Uni/PycharmProjects/WebCrawl/venv/lib/python3.8/imageUrls2.txt", "a")
+    f = open("TODO: enter path", "a")
     f.write(a)
     f.write("\n")
     f.close()
@@ -14,6 +14,7 @@ def writeTofile(a):
 
 # Return all camera links for a specific camera brand
 # Sample camera link: "https://www.flickr.com/cameras/samsung/"
+# You may iterate over a list of camera links retrieved from the flickr API.
 wd = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
 wd.get() #TODO: Put flickr camera link
 
